@@ -3504,38 +3504,6 @@
 				]
 			},
 			{
-				"id": "Observation.component.referenceRange",
-				"path": "Observation.component.referenceRange",
-				"short": "Provides guide for interpretation of component result",
-				"definition": "Guidance on how to interpret the value by comparison to a normal or recommended range.",
-				"comment": "Most observations only have one generic reference range. Systems MAY choose to restrict to only supplying the relevant reference range based on knowledge about the patient (e.g., specific to the patient's age, gender, weight and other factors), but this might not be possible or appropriate. Whenever more than one reference range is supplied, the differences between them SHOULD be provided in the reference range and/or age properties.",
-				"requirements": "Knowing what values are considered \"normal\" can help evaluate the significance of a particular result. Need to be able to provide multiple reference ranges for different contexts.",
-				"min": 0,
-				"max": "0",
-				"base": {
-					"path": "Observation.component.referenceRange",
-					"min": 0,
-					"max": "0"
-				},
-				"type": [
-					{
-						"code": "BackboneElement"
-					}
-				],
-				"isModifier": false,
-				"isSummary": false,
-				"mapping": [
-					{
-						"identity": "v2",
-						"map": "OBX.7"
-					},
-					{
-						"identity": "rim",
-						"map": "outboundRelationship[typeCode=REFV]/target[classCode=OBS, moodCode=EVN]"
-					}
-				]
-			},
-			{
 				"id": "Observation.component.referenceRange.id",
 				"path": "Observation.component.referenceRange.id",
 				"representation": [
