@@ -3515,7 +3515,7 @@
 				"base": {
 					"path": "Observation.component.referenceRange",
 					"min": 0,
-					"max": "*"
+					"max": "0"
 				},
 				"type": [
 					{
