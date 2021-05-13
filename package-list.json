@@ -37,7 +37,7 @@
 			"status": "draft"
 		}
 	],
-	"package-id": "ODH1",
-	"canonical": "http://test.com/fhir/implementationguide/ODH",
+	"package-id": "ODH",
+	"canonical": "http://hl7.org/fhir/us/odh/ImplementationGuide/hl7.fhir.us.odh",
 	"title": "Occupational Data for Health"
 }
