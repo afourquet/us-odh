@@ -2,9 +2,9 @@
 	"resourceType": "StructureDefinition",
 	"id": "odh-Employer-extension",
 	"meta": {
-		"versionId": "3",
-		"lastUpdated": "2021-03-25T18:08:38.631+00:00",
-		"source": "#VDHCw2a1n5xG7dpv"
+		"versionId": "5",
+		"lastUpdated": "2021-05-14T20:18:35.217+00:00",
+		"source": "#yyyKVl1T6O3dTZA1"
 	},
 	"text": {
 		"status": "generated",
@@ -23,20 +23,16 @@
 	"status": "draft",
 	"date": "2018-08-17T00:00:00+10:00",
 	"publisher": "HL7",
-	"contact": [
-		{
-			"telecom": [
-				{
-					"system": "url",
-					"value": "http://standardhealthrecord.org"
-				}
-			]
-		}
-	],
 	"description": "A person or organization that hires the services of another. This contains the address of the employer, which might not be the work location.",
 	"fhirVersion": "4.0.1",
 	"kind": "complex-type",
 	"abstract": false,
+	"context": [
+		{
+			"type": "extension",
+			"expression": "ODH"
+		}
+	],
 	"type": "Extension",
 	"baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
 	"derivation": "constraint",
@@ -510,7 +506,7 @@
 					{
 						"code": "Reference",
 						"targetProfile": [
-							"http://hl7.org/fhir/StructureDefinition/Organization"
+							"http://hl7.org/fhir/us/odh/StructureDefinition/odh-EmployerPerson"
 						]
 					}
 				],
@@ -566,7 +562,7 @@
 					{
 						"code": "Reference",
 						"targetProfile": [
-							"http://hl7.org/fhir/StructureDefinition/Organization"
+							"http://hl7.org/fhir/us/odh/StructureDefinition/odh-EmployerPerson"
 						]
 					}
 				]
