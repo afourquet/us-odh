@@ -1,16 +1,16 @@
 {
-	"id": "hl7.fhir.us.odh",
+	"id": "hl7.fhir.us.odh1",
 	"meta": {
-		"versionId": "48",
-		"lastUpdated": "2021-05-13T23:20:16.991+00:00",
-		"source": "#NyK2qmCyZBNTfDV2"
+		"versionId": "81",
+		"lastUpdated": "2021-04-29T12:49:00.891+00:00",
+		"source": "#E2ktJtV1emUIImxu"
 	},
 	"resourceType": "ImplementationGuide",
 	"status": "draft",
 	"fhirVersion": [
 		"4.0.1"
 	],
-	"url": "http://hl7.org/fhir/us/odh/ImplementationGuide/hl7.fhir.us.odh",
+	"url": "http://hl7.org/fhir/us/odh/ImplementationGuide/hl7.fhir.us.odh1",
 	"version": "1.1",
 	"name": "HL7_FHIR_Profile_Occupational_Data_for_Health_ODH_Release_1_1_Standard_for_Trial_Use",
 	"title": "HL7 FHIR Profile: Occupational Data for Health (ODH), Release 1.1 (Standard for Trial Use)",
@@ -38,18 +38,10 @@
 				}
 			],
 			"text": "United States of America"
-		},
-		{
-			"coding": [
-				{
-					"system": "urn:iso:std:iso:3166:-2",
-					"code": "US"
-				}
-			]
 		}
 	],
 	"copyright": "©2020+ HL7 International Public Health Work Group. Package hl7.fhir.us.odh#1.0.0 based on FHIR 4.0.1. Generated 2020-01-08.\nLinks: Home | QA Report | Search | Version History external | CC0 external | Propose a change external ",
-	"packageId": "hl7.fhir.us.odh",
+	"packageId": "hl7.fhir.us.odh1",
 	"dependsOn": [
 		{
 			"id": "hl7fhiruscore",
@@ -554,105 +546,6 @@
 					"display": "odh is Current Job"
 				},
 				"name": "odh is Current Job"
-			},
-			{
-				"exampleBoolean": false,
-				"reference": {
-					"reference": "CodeSystem/obf-datatype-SettingCS",
-					"display": "Setting CS"
-				},
-				"name": "Setting CS",
-				"description": "What type of place is found at a given location. More than one descriptor may be applicable."
-			},
-			{
-				"exampleBoolean": false,
-				"reference": {
-					"reference": "ValueSet/obf-datatype-AnatomicalOrientationVS",
-					"display": "Anatomical Orientation VS"
-				},
-				"name": "Anatomical Orientation VS",
-				"description": "Terms that specify anatomical orientation. The orientation value set is part of BodyLocation, a flexible structure that allows the location to be determined by a single code, or a code plus laterality and/or orientation. The body location can also be specified in relation to one or more body landmarks. SNOMED CT is used in all cases.\n\n* Code only: The code should include (precoordinate) laterality and/orientation to the degree necessary to completely specify the body location.\n* Code plus laterality and/or orientation: The basic code augmented by codes specifying the body side and/or anatomical orientation.\n* Relation to landmark: The location relative to a landmark is specified by:\n1. Establishing the location and type of landmark using a body site code and optional laterality/orientation, and\n2. Specifying the direction and distance from the landmark to the body location.\n\nNote that BodyLocation is a data type (a reusable structure), not a stand-alone entity. The concept is similar to how a postal address can apply to a person, location, or organization. This contrasts with FHIR's stand-alone BodySite (aka BodyStructure in r4) which 'is not ... intended for describing the type of anatomical location but rather a specific body site on a specific patient' (FHIR 3.5)."
-			},
-			{
-				"exampleBoolean": false,
-				"reference": {
-					"reference": "ValueSet/obf-datatype-AnatomicalDirectionVS",
-					"display": "Anatomical Direction VS"
-				},
-				"name": "Anatomical Direction VS",
-				"description": "Terms that specify anatomical direction."
-			},
-			{
-				"exampleBoolean": false,
-				"reference": {
-					"reference": "StructureDefinition/obf-datatype-LandmarkToBodyLocationDistance-extension",
-					"display": "obf-datatype-LandmarkToBodyLocationDistance"
-				},
-				"name": "obf-datatype-LandmarkToBodyLocationDistance",
-				"description": "How far the body location of interest is from the given landmark."
-			},
-			{
-				"exampleBoolean": false,
-				"reference": {
-					"reference": "ValueSet/obf-datatype-LandmarkTypeVS",
-					"display": "Landmark Type VS"
-				},
-				"name": "Landmark Type VS",
-				"description": "The type of feature that constitutes the landmark, for example, particularly if the landmark is an acquired body structure or physical object. The landmark type value set is part of BodyLocation, a flexible structure that allows the location to be determined by a single code, or a code plus laterality and/or orientation. The body location can also be specified in relation to one or more body landmarks. SNOMED CT is used in all cases.\n\n* Code only: The code should include (precoordinate) laterality and/orientation to the degree necessary to completely specify the body location.\n* Code plus laterality and/or orientation: The basic code augmented by codes specifying the body side and/or anatomical orientation.\n* Relation to landmark: The location relative to a landmark is specified by:\n1. Establishing the location and type of landmark using a body site code and optional laterality/orientation, and\n2. Specifying the direction and distance from the landmark to the body location.\n\nNote that BodyLocation is a data type (a reusable structure), not a stand-alone entity. The concept is similar to how a postal address can apply to a person, location, or organization. This contrasts with FHIR's stand-alone BodySite (aka BodyStructure in r4) which 'is not ... intended for describing the type of anatomical location but rather a specific body site on a specific patient' (FHIR 3.5)."
-			},
-			{
-				"exampleBoolean": false,
-				"reference": {
-					"reference": "StructureDefinition/obf-datatype-LandmarkType-extension",
-					"display": "obf-datatype-LandmarkType"
-				},
-				"name": "obf-datatype-LandmarkType",
-				"description": "The type of feature that constitutes the landmark, particularly if the landmark is an acquired body structure or physical object."
-			},
-			{
-				"exampleBoolean": false,
-				"reference": {
-					"reference": "StructureDefinition/obf-datatype-LandmarkToBodyLocationDirection-extension",
-					"display": "obf-datatype-LandmarkToBodyLocationDirection"
-				},
-				"name": "obf-datatype-LandmarkToBodyLocationDirection",
-				"description": "The direction from the landmark to the body location of interest, given as a clockface direction or anatomical direction."
-			},
-			{
-				"exampleBoolean": false,
-				"reference": {
-					"reference": "ValueSet/obf-datatype-LateralityVS",
-					"display": "Laterality VS"
-				},
-				"name": "Laterality VS",
-				"description": "Body side of the body location, if needed to distinguish from a similar location on the other side of the body.\n\nThe laterality element is part of BodyLocation, a flexible structure that allows the location to be determined by a single code, or a code plus laterality and/or orientation. The body location can also be specified in relation to one or more body landmarks. SNOMED CT is used in all cases.\n\n* Code only: The code should include (precoordinate) laterality and/orientation to the degree necessary to completely specify the body location.\n* Code plus laterality and/or orientation: The basic code augmented by codes specifying the body side and/or anatomical orientation.\n* Relation to landmark: The location relative to a landmark is specified by:\n1. Establishing the location and type of landmark using a body site code and optional laterality/orientation, and\n2. Specifying the direction and distance from the landmark to the body location.\n\nNote that BodyLocation is a data type (a reusable structure), not a stand-alone entity. The concept is similar to how a postal address can apply to a person, location, or organization. This contrasts with FHIR's stand-alone BodySite (aka BodyStructure in r4) which 'is not ... intended for describing the type of anatomical location but rather a specific body site on a specific patient' (FHIR 3.5)."
-			},
-			{
-				"exampleBoolean": false,
-				"reference": {
-					"reference": "ValueSet/obf-datatype-UnitsOfLengthVS",
-					"display": "Units Of Length VS"
-				},
-				"name": "Units Of Length VS",
-				"description": "Units of measure related to length or distance."
-			},
-			{
-				"exampleBoolean": false,
-				"reference": {
-					"reference": "ValueSet/obf-TreatmentTerminationReasonVS",
-					"display": "Treatment Termination Reason VS"
-				},
-				"name": "Treatment Termination Reason VS",
-				"description": "Values used to describe the reasons for stopping a treatment. Includes code for 'treatment completed' as well as codes for unplanned (early) stoppage. Applies to medications and other treatments that take place over a period of time, such as radiation treatments."
-			},
-			{
-				"exampleBoolean": false,
-				"reference": {
-					"reference": "ValueSet/obf-TreatmentIntentVS",
-					"display": "Treatment Intent VS"
-				},
-				"name": "Treatment Intent VS",
-				"description": "The purpose of a treatment. The value set includes 'curative' and 'palliative'. Curative is defined as any treatment meant to reduce or control a disease process, even if a 'cure' is not anticipated. Palliative includes treatments meant to reduce symptoms and side effects, such as antiemetics."
 			}
 		],
 		"page": {

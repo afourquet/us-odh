@@ -2,19 +2,20 @@
 	"resourceType": "StructureDefinition",
 	"id": "obf-datatype-Laterality-extension",
 	"meta": {
-		"versionId": "3",
-		"lastUpdated": "2021-05-13T21:58:20.896+00:00",
-		"source": "#pu7Yot5l6PBpITUZ"
+		"versionId": "2",
+		"lastUpdated": "2020-09-23T01:34:21.425+00:00",
+		"source": "#7MqTbeth9zQta1kh"
 	},
 	"text": {
 		"status": "generated",
 		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>Laterality Extension</b></p>\n  <p>Body side of the body location, if needed to distinguish from a similar location on the other side of the body.\n\nThe laterality element is part of BodyLocation, a flexible structure that allows the location to be determined by a single code, or a code plus laterality and/or orientation. The body location can also be specified in relation to one or more body landmarks. SNOMED CT is used in all cases.\n\n* Code only: The code should include (precoordinate) laterality and/orientation to the degree necessary to completely specify the body location.\n* Code plus laterality and/or orientation: The basic code augmented by codes specifying the body side and/or anatomical orientation.\n* Relation to landmark: The location relative to a landmark is specified by:\n1. Establishing the location and type of landmark using a body site code and optional laterality/orientation, and\n2. Specifying the direction and distance from the landmark to the body location.\n\nNote that BodyLocation is a data type (a reusable structure), not a stand-alone entity. The concept is similar to how a postal address can apply to a person, location, or organization. This contrasts with FHIR's stand-alone BodySite (aka BodyStructure in r4) which 'is not ... intended for describing the type of anatomical location but rather a specific body site on a specific patient' (FHIR 3.5).</p>\n</div>"
 	},
 	"url": "http://hl7.org/fhir/us/odh/StructureDefinition/obf-datatype-Laterality-extension",
+	"version": "1.0.0",
 	"name": "Laterality",
 	"title": "Laterality",
 	"status": "draft",
-	"date": "2020-01-04",
+	"date": "2020-01-04T00:00:00+00:00",
 	"publisher": "HL7 International Public Health Work Group",
 	"contact": [
 		{
