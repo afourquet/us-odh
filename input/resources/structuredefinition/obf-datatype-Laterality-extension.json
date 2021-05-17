@@ -2,9 +2,9 @@
 	"resourceType": "StructureDefinition",
 	"id": "obf-datatype-Laterality-extension",
 	"meta": {
-		"versionId": "3",
-		"lastUpdated": "2021-05-13T21:58:20.896+00:00",
-		"source": "#pu7Yot5l6PBpITUZ"
+		"versionId": "5",
+		"lastUpdated": "2021-05-14T23:20:37.362+00:00",
+		"source": "#dPCQCRfwvcKF3ODh"
 	},
 	"text": {
 		"status": "generated",

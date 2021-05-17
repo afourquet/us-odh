@@ -2,9 +2,9 @@
 	"resourceType": "StructureDefinition",
 	"id": "obf-datatype-Identifier-extension",
 	"meta": {
-		"versionId": "2",
-		"lastUpdated": "2020-09-23T01:34:21.416+00:00",
-		"source": "#r4ljRNRcqpWTkWx1"
+		"versionId": "3",
+		"lastUpdated": "2021-05-14T22:33:47.277+00:00",
+		"source": "#hAd9EDQQ31VG84k5"
 	},
 	"text": {
 		"status": "generated",

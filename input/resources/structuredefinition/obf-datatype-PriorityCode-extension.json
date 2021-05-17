@@ -2,9 +2,9 @@
 	"resourceType": "StructureDefinition",
 	"id": "obf-datatype-PriorityCode-extension",
 	"meta": {
-		"versionId": "2",
-		"lastUpdated": "2020-09-23T01:34:21.352+00:00",
-		"source": "#QowFoLb3pYSBde49"
+		"versionId": "3",
+		"lastUpdated": "2021-05-14T22:33:47.474+00:00",
+		"source": "#1ONtHYpqEIsAlOhL"
 	},
 	"text": {
 		"status": "generated",
